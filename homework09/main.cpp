@@ -17,7 +17,7 @@ int main() {
         
 
         if (choice == 1) {
-            char name[100], home[100], work[100], mobile[100], info[100];
+            char name, home, work, mobile, info;
             cout << "Enter full name: ";
             cin.getline(name, 100);
             cout << "Enter home phone: ";
@@ -34,14 +34,14 @@ int main() {
             pb.addContact(c);
         }
         else if (choice == 2) {
-            char name[100];
+            char name;
             cout << "Enter name to remove: ";
             cin.ignore();
             cin.getline(name, 100);
             pb.removeContact(name);
         }
         else if (choice == 3) {
-            char name[100];
+            char name;
             cout << "Enter name to find: ";
             cin.ignore();
             cin.getline(name, 100);
