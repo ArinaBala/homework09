@@ -3,7 +3,7 @@
 
 class PhoneBook {
 private:
-    Contact contacts[100];
+    Contact contacts;
     int size;
 
 public:
